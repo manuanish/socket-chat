@@ -1,0 +1,11 @@
+{
+  "name": "bon5r",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "Manu Anish",
+  "license": "MIT"
+}
