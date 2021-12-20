@@ -1,0 +1,133 @@
+body {
+  height: 100%;
+}
+
+html {
+  zoom: 1.2;
+}
+
+img.emoji {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
+
+.sideBar {
+  float: right;
+  width: 250px;
+  height: 100%;
+  padding: 16px;
+}
+
+.messageHolder {
+  display: block;
+  overflow-y: scroll;
+  height: calc(100% - 70px);
+  padding: 10px;
+  max-height: calc(100% - 70px);
+  margin-bottom: 100px;
+}
+
+.mainApp {
+  margin-right: 0px;
+  height: 100%;
+}
+
+.clientMessage{
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#mainForm{
+  margin-left: 16px;
+}
+
+#messages {
+  scroll-behavior: smooth;
+}
+#submitButton{
+  margin-right: 10px;
+}
+
+.serverMessage{
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.messageBubble {
+  float: left;
+}
+
+
+.messageTime{
+  float: right;
+  margin-left: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  transition-duration: 0.4s;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #010409;
+  border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #161b22;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6e7681;
+}
+
+.onlineUsersListTextHolder {
+  color: var(--charcoal35);
+  margin-top: 20px;
+  font-weight: 800;
+  font-size: 15pt;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sideBar {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  /* width */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  html {
+    zoom: 1;
+  }
+
+  #submitButton {
+    display: none;
+    margin-right: 0px;
+  }
+
+  #mainForm{
+    margin-left: 16px;
+  }
+
+  #messageInput {
+    width: calc(100vw - 16%);
+  }
+}

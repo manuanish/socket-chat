@@ -1,0 +1,29 @@
+html {
+  zoom: 1.2;
+}
+
+
+img.emoji {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
+
+@media only screen and (max-width: 640px) {
+  html {
+    zoom: 1;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #submit_button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  html {
+    zoom: 0.8;
+  }
+}

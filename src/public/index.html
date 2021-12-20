@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<html data-color-mode="dark" data-dark-theme="dark" style="height: 100%; border-radius: 10px">
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+
+    <!-- CSS Styles -->
+    <link href="https://unpkg.com/@primer/css@^19.0.0/dist/primer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <title id="room_name_title"></title>
+
+  </head>
+  <body class="p-2">
+    <div class="blankslate blankslate-large mt-5 mb-5">
+      <p class="bold color-fg-on-emphasis" style="font-size: 20pt; font-weight: 500;">The bonfire <span id="room_name" class="color-fg-muted"></span> is private🔒</p>
+      <p class='color-fg-subtle'>If you have the password, you may enter.</p>
+    </div>
+
+    <form class='' style="display: flex; justify-content: center; align-items:center;" id="password_form">
+      <div id="form_group"class="">
+        <div id="form_group_username"class="form-group">
+          <div class="form-group-header ml-2">
+            <label for="username_input">Username</label>
+          </div>
+          <input id="username_input" class="form-control m-2 p-3" type="text" placeholder="Username..." style="margin-left:10px; width: 400px;" autocomplete="off" required/>
+          <p class="" id="username-input-validation"></p>
+        </div>
+        <div id="form_group_password"class="form-group">
+          <div class="form-group-header ml-2">
+            <label for="password_input">Password</label>
+          </div>
+          <input id="password_input" class="form-control m-2 p-3" type="text" placeholder="Password..." style="margin-left:10px; width: 400px;" autocomplete="off" required/>
+          <p class="note error" id="password-input-validation"></p>
+        </div>
+        <button class="btn btn-primary p-3 mr-2" id="submit_button" type="submit" style="float:right;">Submit</button>
+      </div>
+    </form>
+
+
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Scripts -->
+    <script src="https://cdn.socket.io/4.4.0/socket.io.js" charset="utf-8"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

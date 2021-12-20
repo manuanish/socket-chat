@@ -2,10 +2,15 @@
   "name": "bon5r",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "npm start"
+    "start": "node src/server.js"
   },
   "author": "Manu Anish",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "socket.io": "^4.4.0"
+  }
 }
