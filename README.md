@@ -13,7 +13,7 @@ This project requires `NodeJS` installed on your system to run. NodeJS is availa
 
 ## **Usage**
 ### **Setting up the server** ⚙️
-To setup the server navigate to the file located in src/server-data.json and change the information e.g Room Name, Password in the file.
+To setup the server navigate to the file located in `src/server-data.json` and change the information e.g Room Name, Password in the file.
 
 ### **Running the server** 💡
 To start the chat room, begin by cloning this repository using:
@@ -54,7 +54,7 @@ Now the application should be running. This can be distributed and packaged usin
 ---
 
 ## **Hosting Globally** 🌍
-The server can be hosted on platforms such as `Heroku`, `Google Cloud`, etc. allowing users from around the world to connect to the room. For an example, check out this website hosting a chatroom globally https://chat-on-the-go.herokuapp.com/
+The server can be hosted on platforms such as `Heroku`, `Google Cloud`, etc. allowing users from around the world to connect to the room. 
 
 ### **Planned Features** 💭
 Here are some of the things planned to be added soon to the project.
