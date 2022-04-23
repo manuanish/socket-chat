@@ -1,4 +1,4 @@
-# **Bon5R**
+# **socket-chat**
 ---
 
 A server hosted locally allowing users on the same local area network to chat with each other. This project features.
